@@ -243,6 +243,10 @@
 		var/list/reskin_icons = list()
 		for(var/skin in borg_skins)
 			var/list/details = borg_skins[skin]
+			// NIGHTSTATION EDIT ADD START - Remove dogborgs
+			if(!isnull(details[SKIN_FEATURES]) && (R_TRAIT_WIDE in details[SKIN_FEATURES]))
+				continue
+			// NIGHTSTATION EDIT ADD END
 			reskin_icons[skin] = image(icon = details[SKIN_ICON] || 'icons/mob/silicon/robots.dmi', icon_state = details[SKIN_ICON_STATE])
 			//SKYRAT EDIT ADDITION BEGIN - ALTBORGS
 			if (!isnull(details[SKIN_FEATURES]))
