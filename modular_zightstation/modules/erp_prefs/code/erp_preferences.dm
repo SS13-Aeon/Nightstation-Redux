@@ -13,7 +13,7 @@
 	savefile_key = "erp_status_pref_sexuality"
 
 /datum/preference/choiced/erp_status_sexuality/init_possible_values()
-	return list("Straight", "Gay", "Bisexual", "Pansexual", "Asexual", "None")
+	return list("Straight", "Gay", "Lesbian", "Bisexual", "Pansexual", "Asexual", "None")
 
 /datum/preference/choiced/erp_status_sexuality/create_default_value()
 	return "None"
