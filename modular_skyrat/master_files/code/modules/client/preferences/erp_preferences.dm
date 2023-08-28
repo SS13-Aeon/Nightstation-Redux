@@ -212,12 +212,12 @@
 
 /datum/preference/choiced/erp_status_v/apply_to_human(mob/living/carbon/human/target, value, datum/preferences/preferences)
 	return FALSE
+*/ // NIGHTSTATION EDIT REMOVAL END
 
 /datum/preference/choiced/erp_status_mechanics
 	category = PREFERENCE_CATEGORY_NON_CONTEXTUAL
 	savefile_identifier = PREFERENCE_CHARACTER
 	savefile_key = "erp_status_pref_mechanics"
-*/ // NIGHTSTATION EDIT REMOVAL END
 
 /datum/preference/choiced/erp_status_mechanics/init_possible_values()
 	return list("Roleplay only", "Mechanical only", "Mechanical and Roleplay", "None")
