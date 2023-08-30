@@ -59,12 +59,24 @@
 	//  Handle OOC notes first
 	if(preferences && preferences.read_preference(/datum/preference/toggle/master_erp_preferences))
 		var/e_prefs = preferences.read_preference(/datum/preference/choiced/erp_status)
-		var/e_prefs_nc = preferences.read_preference(/datum/preference/choiced/erp_status_nc)
-		var/e_prefs_v = preferences.read_preference(/datum/preference/choiced/erp_status_v)
+		// NIGHTSTATION EDIT START - ERP prefs
+		/*
+		//var/e_prefs_nc = preferences.read_preference(/datum/preference/choiced/erp_status_nc)
+		//var/e_prefs_v = preferences.read_preference(/datum/preference/choiced/erp_status_v)
+		*/
+		var/e_prefs_sexuality = preferences.read_preference(/datum/preference/choiced/erp_status_sexuality)
+		var/e_prefs_position = preferences.read_preference(/datum/preference/choiced/erp_status_position)
+		// NIGHTSTATION EDIT END - ERP prefs
 		var/e_prefs_mechanical = preferences.read_preference(/datum/preference/choiced/erp_status_mechanics)
 		ooc_notes += "ERP: [e_prefs]\n"
+		// NIGHTSTATION EDIT START - ERP prefs
+		/*
 		ooc_notes += "Non-Con: [e_prefs_nc]\n"
 		ooc_notes += "Vore: [e_prefs_v]\n"
+		*/
+		ooc_notes += "Sexuality: [e_prefs_sexuality]\n"
+		ooc_notes += "Preferred Position: [e_prefs_position]\n"
+		// NIGHTSTATION EDIT END - ERP prefs
 		ooc_notes += "ERP Mechanics: [e_prefs_mechanical]\n"
 		ooc_notes += "\n"
 

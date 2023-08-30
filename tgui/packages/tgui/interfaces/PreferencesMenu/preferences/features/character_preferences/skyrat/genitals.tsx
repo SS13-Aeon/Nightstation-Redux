@@ -183,6 +183,14 @@ export const erp_status_pref: FeatureChoiced = {
   component: FeatureDropdownInput,
 };
 
+// NIGHTSTATION EDIT ADD START
+export const erp_status_pref_sexuality: FeatureChoiced = {
+  name: 'ERP Sexuality',
+  component: FeatureDropdownInput,
+};
+// NIGHTSTATION EDIT ADD END
+
+/* NIGHTSTATION EDIT REMOVAL START
 export const erp_status_pref_nc: FeatureChoiced = {
   name: 'ERP Non-Con Status',
   component: FeatureDropdownInput,
@@ -192,6 +200,7 @@ export const erp_status_pref_v: FeatureChoiced = {
   name: 'ERP Vore Status',
   component: FeatureDropdownInput,
 };
+*/ // NIGHTSTATION EDIT REMOVAL END
 
 export const erp_status_pref_mechanics: FeatureChoiced = {
   name: 'ERP Mechanical Status',
